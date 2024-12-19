@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Undangan Pernikahan</title>
+  </head>
+  <body>
+    <!-- cover -->
+    <div id="cover" class="cover">
+      <img src="assets/img/bg-cover.webp" alt="" class="bg-cover" />
+      <h1 class="header-cover">THE WEDDING OF</h1>
+      <p class="nama-pengantin-cover">Ali & Chica</p>
+      <div class="container-nama-tamu">
+        <p id="nama-tamu-awal"><i>Kepada Yth. Bapak/Ibu/Saudara/i</i></p>
+        <p id="nama-tamu-text">Farrel Ali Rifaldo</p>
+        <button type="button" id="bukaweb" onclick="hideCover(), putarlagu()">
+          Buka Undangan
+        </button>
+      </div>
+      <div class="container-cover-elemen-atas">
+        <img src="assets/img/cover1.webp" class="cover-elemen-atas" alt="" />
+      </div>
+      <div class="container-cover-elemen-bawah">
+        <img src="assets/img/cover1.webp" class="cover-elemen-bawah" alt="" />
+      </div>
+    </div>
+    <nav>
+      <input type="checkbox" id="sidebar-active" />
+      <label for="sidebar-active" class="open-sidebar-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#7a0709"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </label>
+
+      <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#7a0709"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </label>
+
+        <a href="#sectionPengantin" class="home-link">Bio Pengantin</a>
+        <a href="#story">Story</a>
+        <a href="#galeri">Gallery</a>
+        <a href="#acara">Acara</a>
+        <a href="#reservasi">Reservasi</a>
+      </div>
+    </nav>
+    <!-- music -->
+    <div class="kotak-musik">
+      <audio id="lagu" loop>
+        <source src="assets/audio/instrumen-minang.mp3" />
+        audio tidak dapat diputar
+      </audio>
+      <div class="tombol-musik" onclick="putarlagu()">
+        <img src="assets/icons/vinyl-record.png" class="kontrol" />
+      </div>
+    </div>
+    <!-- quotes section -->
+    <div class="container-quotes">
+      <img src="assets/img/bunga1.png" id="bunga1" alt="">
+      <img src="assets/img/bunga1.png" id="bunga2" alt="">
+      <p id="quotes-text">
+        "Dan segala seusuatu Kami ciptakan berpasang-pasangan agar kamu
+        mengingat (kebesaran Allah)."
+      </p>
+      <p id="quotes-sumber">Q.S Adz - Dzariyat : 49</p>
+    </div>
+    <div class="hr">
+      <hr id="hr" />
+    </div>
+    <!-- section pengantin -->
+    <div class="groom-and-bride" id="sectionPengantin">
+      <p id="groom-and-bride-text">THE GROOM & BRIDE</p>
+      <img src="assets/img/pengantin-pria.jpg" id="foto-pengantin-pria" />
+      <p class="nama-pengantin">Ali D. Rifaldo</p>
+      <span class="desc-pengantin-1">
+        <p class="desc-pengantin-2">Putra dari</p>
+        <p>Bapak Rifaldo D. Sabo & Ibu Nami Suyanti</p>
+        <br />
+        <a href="https://www.instagram.com/farrelali04/" class="akun-pengantin">
+          <img src="assets/icons/icon-IG.png" />
+          farrelali04
+        </a> </span
+      ><br />
+      <img src="assets/img/pengantin-wanita.jpg" id="foto-pengantin-pria" />
+      <p class="nama-pengantin">Chica Tri Kusuma</p>
+      <span class="desc-pengantin-1">
+        <p class="desc-pengantin-2">Putri dari</p>
+        <p>Bapak Raul Sucipto & Ibu Nunung Meilanti</p>
+        <br />
+        <a href="https://www.instagram.com/azizahksma" class="akun-pengantin">
+          <img src="assets/icons/icon-IG.png" />
+          chicaksma
+        </a> </span
+      ><br />
+    </div>
+    <!-- section story  -->
+    <div class="container-story" id="story">
+      <div class="container-story-elemen-atas">
+        <img src="assets/img/divider1.webp" class="story-elemen-atas" alt="" />
+      </div>
+      <p id="love-story">Love Story</p>
+      <img src="assets/img/foto-story.jpg" alt="" id="foto-story" />
+      <span class="isi-story">
+        <p class="isi-paragraf-story">
+          Awalnya, kami hanyalah dua orang yang berjalan di jalur hidup
+          masing-masing, tanpa pernah menyadari bahwa takdir telah menyiapkan
+          pertemuan yang akan mengubah segalanya. Di suatu hari yang tak
+          terduga, langkah kami bertemu—seperti semesta yang menyusun pertemuan
+          kami dengan penuh kesempurnaan.
+        </p>
+        <p class="isi-paragraf-story">
+          Percakapan pertama yang sederhana menjadi awal dari segala keindahan.
+          Seiring waktu, tawa dan kebersamaan tumbuh menjadi ikatan yang kuat.
+          Kami belajar, bahwa cinta bukan hanya tentang kebahagiaan, tapi juga
+          tentang saling mendukung, menguatkan, dan tumbuh bersama.
+        </p>
+        <p class="isi-paragraf-story">
+          Hari ini, kami memutuskan untuk mengikat janji suci, berkomitmen untuk
+          selalu ada satu sama lain dalam suka dan duka. Dengan penuh cinta,
+          kami mengundang keluarga dan sahabat untuk menjadi bagian dari awal
+          baru perjalanan ini.
+        </p>
+      </span>
+      <div class="hr2">
+        <hr id="hr2" />
+      </div>
+    </div>
+    <!-- section gallery -->
+    <div class="section-gallery" id="galeri">
+      <h2 id="gallery">Gallery</h2>
+      <video src="assets/video/video-prewed.mp4" id="gallery-video" controls muted></video>
+      <div class="container-gallery">
+        <div class="gallery">
+          <div class="column">
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-1.jpg" alt="" />
+            </div>
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-2.jpg" alt="" />
+            </div>
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-3.jpg" alt="" />
+            </div>
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-10.jpg" alt="" />
+            </div>
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-14.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-4.jpg" alt="" />
+            </div>
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-5.jpg" alt="" />
+            </div>
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-6.jpg" alt="" />
+            </div>
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-12.jpg" alt="" />
+            </div>
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-13.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-7.jpg" alt="" />
+            </div>
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-8.jpg" alt="" />
+            </div>
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-9.jpg" alt="" />
+            </div>
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-11.jpg" alt="" />
+            </div>
+            <div class="gallery-foto">
+              <img src="assets/img/foto-gallery-15.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section event -->
+    <div class="section-event" id="acara">
+      <div class="container-event-elemen-atas">
+        <img src="assets/img/divider1.webp" class="event-elemen-atas" alt="" />
+      </div>
+      <h2 id="event">Event</h2>
+      <p id="event-text">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan do'a restunya, kami ucapkan terima kasih.</p>
+      <div class="akad-nikah">
+        <h3 id="judul-event">Akad Nikah</h3>
+        <div class="hr-event">
+          <hr>
+          <p class="isi-event">
+            <img src="assets/icons/icon-kalender-putih.png" alt="">
+            Sabtu, 11 April 2026
+          </p>
+          <p class="isi-event">
+            <img src="assets/icons/icon-jam-putih.png" alt="">
+            09.00 WIB - Selesai
+          </p>
+          <p class="isi-event">
+            <img src="assets/icons/icon-GPS-putih.png" alt="">
+            Masjid Istiqlal, Jakarta
+          </p><br>
+          <a href="https://www.google.com/maps/place/Masjid+Istiqlal/@-6.17017,106.8288151,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f5ce68b5e01d:0xcafaf042d5840c6c!8m2!3d-6.17017!4d106.83139!16zL20vMDRzam1q?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" id="gmaps-istiqlal">
+            <img src="assets/icons/icon-Gmaps.png" alt="">
+            Buka di Google Maps
+          </a>
+        </div>
+      </div>
+      <div class="resepsi">
+        <h3 id="judul-event">Resepsi</h3>
+        <div class="hr-event">
+          <hr>
+          <p class="isi-event">
+            <img src="assets/icons/icon-kalender-putih.png" alt="">
+            Minggu, 12 April 2026
+          </p>
+          <p class="isi-event">
+            <img src="assets/icons/icon-jam-putih.png" alt="">
+            09.00 WIB - Selesai
+          </p>
+          <p class="isi-event">
+            <img src="assets/icons/icon-GPS-putih.png" alt="">
+            Hotel Indonesia, Jakarta
+          </p><br>
+          <a href="https://www.google.com/maps/place/Hotel+Indonesia+Kempinski+Jakarta/@-6.1956129,106.8197823,17z/data=!4m9!3m8!1s0x2e69f421963cd607:0x503cb9e9306e657a!5m2!4m1!1i2!8m2!3d-6.1956129!4d106.8223572!16s%2Fm%2F02qr_3v?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" id="gmaps-istiqlal">
+            <img src="assets/icons/icon-Gmaps.png" alt="">
+            Buka di Google Maps
+          </a>
+      </div>
+    </div>
+    <div class="hr-putih">
+      <hr id="hr-putih">
+    </div>
+    <!-- table section -->
+     <div class="section-table">
+      <h2 id="judul-table">Turut Mengundang</h2>
+      <table id="table-tamu">
+        <tr>
+          <th colspan="4">Daftar Tamu Undangan Pernikahan VIP</th>
+        </tr>
+        <tr>
+          <th>No.</th>
+          <th>Nama</th>
+          <th>Hubungan</th>
+          <th>Jumlah Tamu</th>
+        </tr>
+        <tr>
+          <td rowspan="2">1</td>
+          <td>Budi Santoso</td>
+          <td>Paman Pengantin Pria</td>
+          <td rowspan="2">4</td>
+        </tr>
+        <tr>
+          <td>Siti Rahayu</td>
+          <td>Bibi Pengantin Pria</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ust. Abdul Somad</td>
+          <td>Penghulu</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td rowspan="3">3</td>
+          <td>Raden Mas Suryo</td>
+          <td rowspan="3">Kerabat Jauh Pengantin Pria</td>
+          <td rowspan="3">6</td>
+        </tr>
+        <tr>
+          <td>Raden Ayu Sekar</td>
+        </tr>
+        <tr>
+          <td>Raden Bagus Aji</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td colspan="2">Walikota dan Istri</td>
+          <td>2</td>
+        </tr>
+      </table>
+     </div>
+     <!-- section-RSVP -->
+     <div class="section-rsvp" id="reservasi">
+       <div class="container-rsvp-elemen-atas">
+          <img src="assets/img/divider1.webp" class="rsvp-elemen-atas" alt="" />
+       </div>
+       <div class="container-rsvp">
+        <div class="container">
+          <h2 id="judul-rsvp">RSVP</h2>
+          <form action="#" method="post">
+              <div>
+                  <label for="nama">Nama:</label>
+                  <input type="text" id="nama" name="nama" required>
+              </div>
+              
+              <div>
+                  <label for="telepon">No Telepon:</label>
+                  <input type="text" id="telepon" name="telepon" required>
+              </div><br>
+              
+              <div>
+                  <label>Kehadiran:</label><br>
+                  <input type="radio" id="hadir" name="kehadiran" value="hadir" required>
+                  <label for="hadir">Hadir</label>
+                  <input type="radio" id="tidak_hadir" name="kehadiran" value="tidak_hadir">
+                  <label for="tidak_hadir">Tidak Hadir</label>
+              </div><br>
+              
+              <div>
+                  <label for="jumlah_tamu">Jumlah Tamu:</label>
+                  <select id="jumlah_tamu" name="jumlah_tamu">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                  </select>
+              </div><br>
+              
+              <div>
+                  <label>Menu Catering:</label><br>
+                  <input type="checkbox" id="vegetarian" name="menu[]" value="vegetarian">
+                  <label for="vegetarian">Vegetarian</label><br>
+                  <input type="checkbox" id="lactose" name="menu[]" value="lactose">
+                  <label for="lactose">Lactose Intoleran</label><br>
+                  <input type="checkbox" id="diet" name="menu[]" value="diet">
+                  <label for="diet">Diet</label>
+              </div>
+              
+              <input type="submit" value="Kirim RSVP">
+          </form>
+      </div>
+       </div>
+     </div>
+  </body>
+</html>
+
+<script src="assets/js/web.js"></script>

@@ -1,0 +1,640 @@
+/* Font: Great Vibes  */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+/* Font: Bitter */
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Great+Vibes&display=swap");
+/* Font: parisienne */
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Parisienne&display=swap");
+/* Font: Imperial Script */
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap");
+/* Font: Forum */
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Imperial+Script&display=swap");
+:root {
+  --color-1: #7a0709;
+  --color-2: #f2b656;
+  --color-3: #fef7e5;
+  --color-4: #ffb050;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--color-1);
+}
+.cover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s ease-in-out;
+  overflow: hidden;
+}
+.cover.hidden {
+  transform: translateY(-100%);
+}
+.bg-cover {
+  background-image: url("../img/bg-cover.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  filter: blur(4px);
+  z-index: -2;
+}
+.header-cover {
+  position: relative;
+  font-size: 20px;
+  font-family: "Bitter";
+  font-weight: 450;
+  color: aliceblue;
+  bottom: 75px;
+}
+.nama-pengantin-cover {
+  position: relative;
+  font-family: "Imperial Script";
+  color: var(--color-4);
+  font-size: 4rem;
+  margin: 10px 15px;
+  bottom: 60px;
+}
+.container-nama-tamu {
+  background-color: var(--color-1);
+  width: 70%;
+  height: auto;
+  margin: 10px;
+  padding: 7px 3px;
+  border-top: solid var(--color-4) 2px;
+  border-radius: 5px;
+  font-family: "bitter";
+  color: var(--color-3);
+  text-align: center;
+}
+#nama-tamu-awal {
+  font-size: 10px;
+  margin: 5px;
+}
+#nama-tamu-text {
+  font-size: 19px;
+  margin: 10px;
+}
+#bukaweb {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 12px;
+  background-color: var(--color-4);
+  color: var(--color-3);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container-cover-elemen-atas {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.cover-elemen-atas {
+  position: static;
+  display: inline-block;
+  transform: rotate(180deg);
+  width: 100%;
+}
+.container-cover-elemen-bawah {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.cover-elemen-bawah {
+  position: static;
+  display: inline-block;
+  width: 100%;
+}
+nav {
+  height: 60px;
+  background-color: var(--color-4);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.links-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  z-index: 100;
+}
+nav a {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-3);
+}
+nav a:hover {
+  background-color: #b87626;
+}
+nav .home-link {
+  margin-right: auto;
+}
+nav svg {
+  fill: var(--color-3);
+}
+#sidebar-active {
+  display: none;
+}
+.open-sidebar-button,
+.close-sidebar-button {
+  display: none;
+}
+.tombol-musik {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 20;
+}
+.kontrol.rotating {
+  animation: rotate 2s linear infinite;
+  z-index: 20;
+}
+.tombol-musik img {
+  width: 40px;
+  transition: transform 0.5s;
+  z-index: 20;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container-quotes {
+  color: var(--color-3);
+  font-family: "Forum";
+  text-align: center;
+  padding: 8px;
+}
+#bunga1 {
+  width: 100px;
+  position: relative;
+  transform: rotate(45deg);
+  top: 170px;
+  right: 90px;
+}
+#bunga2 {
+  width: 100px;
+  position: relative;
+  transform: rotate(135deg);
+  top: 170px;
+  left: 90px;
+}
+#quotes-text {
+  margin: 15px 12px 15px;
+}
+.hr {
+  align-items: center;
+  padding: 40px;
+}
+.groom-and-bride {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#groom-and-bride-text {
+  color: var(--color-3);
+  font-family: "bitter";
+}
+#foto-pengantin-pria {
+  width: 55%;
+  border: solid var(--color-3) 2px;
+  border-radius: 45%;
+  margin: 20px;
+}
+.nama-pengantin {
+  font-family: "bitter";
+  font-size: 20px;
+  color: var(--color-3);
+  animation: appear-x linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.desc-pengantin-1 {
+  color: var(--color-3);
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  margin: 3px;
+  font-family: "bitter";
+  font-weight: 300;
+  font-size: 12px;
+  animation: appear-x linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.desc-pengantin-2 {
+  margin: 1px;
+}
+.akun-pengantin {
+  width: 100px;
+  height: auto;
+  background-color: #4b0405;
+  color: var(--color-3);
+  font-family: "bitter";
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 10px auto;
+  text-align: center;
+}
+.akun-pengantin img {
+  width: 13px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* section story */
+.container-story {
+  background-color: var(--color-3);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.container-story-elemen-atas {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.story-elemen-atas {
+  position: static;
+  display: inline-block;
+  width: 100%;
+}
+#love-story {
+  font-family: "great vibes";
+  font-size: 1.5rem;
+  color: var(--color-4);
+  font-weight: bold;
+  margin: 7px 5px 30px;
+}
+#foto-story {
+  width: 75%;
+  border: solid var(--color-1) 2px;
+  border-radius: 10px;
+  animation: appear-x linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.isi-story {
+  font-size: 13px;
+  font-family: "forum";
+}
+.isi-paragraf-story {
+  margin: 10px 30px 25px;
+  animation: appear-y 5s linear;
+  animation-timeline: view();
+  animation-range: entry 10% cover 20%;
+}
+.hr2 {
+  align-items: center;
+  padding: 40px;
+}
+#hr2 {
+  border: solid 0.7px var(--color-1);
+}
+/* gallery-section */
+.section-gallery {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-3);
+  text-align: center;
+}
+#gallery {
+  font-family: "great vibes";
+  font-size: 1.5rem;
+  color: var(--color-4);
+  font-weight: bold;
+  margin: 0px 5px 20px;
+}
+#gallery-video {
+  width: 90%;
+}
+.container-gallery {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+}
+.gallery {
+  display: flex;
+  gap: 10px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gallery-foto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+/* section-event */
+.section-event {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-1);
+  background-image: url(../img/bg-event.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+  text-align: center;
+}
+.container-event-elemen-atas {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.event-elemen-atas {
+  position: static;
+  display: inline-block;
+  width: 100%;
+}
+#event {
+  font-family: "great vibes";
+  font-size: 1.5rem;
+  color: var(--color-3);
+  font-weight: bold;
+  margin: 0px 5px 20px;
+}
+#event-text {
+  margin: 10px 13px;
+  font-family: "forum";
+  color: var(--color-3);
+  animation: appear-y linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+#bg-event {
+  position: absolute;
+  width: 120px;
+}
+.akad-nikah,
+.resepsi {
+  width: 80%;
+  height: 210px;
+  margin: 20px auto;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  animation: appear-x linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.hr-event {
+  padding: 23px;
+  margin: 0;
+}
+#judul-event {
+  color: var(--color-3);
+  font-family: "forum";
+  font-size: 1.5rem;
+  margin: 5px 0 0 0;
+  position: relative;
+  top: 10px;
+}
+.isi-event {
+  font-family: "bitter";
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-3);
+  margin: 7px;
+}
+.isi-event img {
+  width: 13px;
+}
+#gmaps-istiqlal {
+  text-decoration: none;
+  font-family: "bitter";
+  color: var(--color-3);
+  top: 10px;
+  padding: 7px;
+  width: auto;
+  height: auto;
+  background-color: var(--color-4);
+  border: solid 2px var(--color-3);
+  border-radius: 30px;
+}
+#gmaps-istiqlal img {
+  width: 13px;
+}
+.hr-putih {
+  padding: 40px;
+}
+/* section table */
+.section-table {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-1);
+  background-image: url(../img/bg-event.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 90%;
+  text-align: center;
+}
+#judul-table {
+  font-family: "great vibes";
+  font-size: 1.5rem;
+  color: var(--color-3);
+  font-weight: bold;
+  margin: 20px 5px 60px;
+}
+#table-tamu {
+  border-collapse: collapse;
+  border-radius: 5px 5px 0 0;
+  color: var(--color-3);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 90%;
+  margin: 15px auto;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  animation: appear-x linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+#table-tamu tr th {
+  background-color: var(--color-4);
+  color: var(--color-3);
+  border: solid;
+  text-align: center;
+  font-weight: bold;
+}
+#table-tamu tr,
+#table-tamu th {
+  padding: 10px 12px;
+}
+#table-tamu tr {
+  border-bottom: solid 1px #dddddd;
+}
+#table-tamu td {
+  border: solid 1px #dddddd;
+}
+.section-rsvp {
+  background-color: var(--color-3);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.container-rsvp-elemen-atas {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.rsvp-elemen-atas {
+  position: static;
+  display: inline-block;
+  width: 100%;
+}
+#judul-rsvp {
+  font-family: "great vibes";
+  font-size: 1.5rem;
+  color: var(--color-4);
+  font-weight: bold;
+  margin: 20px 5px 60px;
+}
+/*  */
+.container {
+  max-width: 90%;
+  margin: auto;
+  background: var(--color-3);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+h2 {
+  text-align: center;
+  color: #333;
+}
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: var(--color-4);
+  color: var(--color-3);
+  font-family: "bitter";
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #b87626;
+}
+#hadir {
+  margin: 5px;
+}
+@media (max-width: 768px) {
+  .links-container {
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    background-color: var(--color-4);
+    flex-direction: column;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+  }
+  #sidebar-active:checked ~ .links-container {
+    right: 0;
+  }
+  .open-sidebar-button {
+    display: block;
+    cursor: pointer;
+    padding: 0 20px;
+  }
+  .close-sidebar-button {
+    display: block;
+    align-self: flex-end;
+    padding: 20px;
+  }
+  nav a {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+}
+@keyframes appear-x {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes appear-y {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
